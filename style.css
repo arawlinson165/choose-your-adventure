@@ -1,0 +1,37 @@
+html{
+    overflow-x: hidden;
+
+}
+
+.startpage{
+    padding-top: 10%;
+    display: block;
+}
+
+body {
+    align-items: center;
+    text-align: center;
+
+    background-image: url("Assets/forest.JPEG");
+    background-position: center;
+}
+
+.section{
+    display: flex;
+}
+
+.button1{
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    margin: 10px;
+    padding: 5px;
+    flex: 1 1 600px;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    font-weight: bolder;
+}
