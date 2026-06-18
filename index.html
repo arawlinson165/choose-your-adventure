@@ -1,19 +1,41 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-        <meta name="viewport" content="width=device-width">
-        <title>Choose Your Own Adventure</title>
-        <link rel="stylesheet" href="style.css">
-        <script defer src="script.js"></script>
-    </head>
+<head>
+    <meta name="viewport" content="width=device-width">
+    <title>Choose Your Own Adventure</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
 
-    <body>
-        <div class = "startpage">
-            <h1>This is the header</h1>
-            <div class = "section">
-                <a class = button1 href = "#pagetwo">1. option 1</a>
+<body>
+    <div class="page page-1_0" id="1_0" style="display: block;">
+        <h1>This is the header</h1>
+        <h2>This is the subheading</h2>
+        <div class="section">
+            <div class="button-container">
+                <a class="button1" href="#pagetwo">1. option 1</a>
+                <a class="button1" href="#pagetwo">2. option 2</a>
+                <a class="button1" href="#pagetwo">3. option 3</a>
+                <a class="button1" href="#pagetwo">4. option 4</a>
             </div>
+            <a class="next-button" href="#pagetwo">Next</a>
         </div>
-    </body>
+    </div>
+
+    <div class="page-2_1" id="2_1" style="display: none;">
+        <h1>This is the header</h1>
+        <h2>This is the subheading</h2>
+        <div class="section">
+            <div class="button-container">
+                <a class="button1" href="#pagetwo">1. option 1</a>
+                <a class="button1" href="#pagetwo">2. option 2</a>
+                <a class="button1" href="#pagetwo">3. option 3</a>
+                <a class="button1" href="#pagetwo">4. option 4</a>
+            </div>
+            <a class="next-button" href="#pagetwo">Next</a>
+        </div>
+    </div>
+</body>
+
 </html>

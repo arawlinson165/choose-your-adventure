@@ -1,31 +1,67 @@
 html{
     overflow-x: hidden;
+    /* overflow-y: hidden; */
 
 }
 
-.startpage{
+.page{
     padding-top: 10%;
     display: block;
+    height: 100vh;
+    width: 100vw;
+    margin: none;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
+/* had to learn inheritance for ts */
+.page-1_0{ background-image: url("Assets/forest.JPEG"); }
+.page-2_1{ background-image: url("Assets/forest.JPEG"); }
+
 
 body {
     align-items: center;
     text-align: center;
+    padding: none;
+    background-color: red;
+}
 
-    background-image: url("Assets/forest.JPEG");
-    background-position: center;
+h1, h2{
+    background-color: rgba(255, 255, 255, 0.726);
+    border-radius: 8px;
+    margin: 10px;
+    padding: 5px;
+    flex: 1 1;
 }
 
 .section{
     display: flex;
 }
 
+.button-container{
+    display:block;
+    width: 60%;
+    
+}
+
 .button1{
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.726);
+    display: block;
     border-radius: 8px;
     margin: 10px;
     padding: 5px;
-    flex: 1 1 600px;
+    /* width: 60%; */
+}
+
+.next-button{
+    background-color: rgba(255, 255, 255, 0.726);
+    display: flex;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 5px;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
 }
 
 a{
