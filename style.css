@@ -1,28 +1,27 @@
 html{
     overflow-x: hidden;
-    /* overflow-y: hidden; */
-
+    overflow-y: hidden;
 }
 
 .page{
-    padding-top: 10%;
+    padding: 20px;
     display: block;
     height: 100vh;
     width: 100vw;
     margin: none;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:var(viewport-height);
 }
 
 /* had to learn inheritance for ts */
 .page-1_0{ background-image: url("Assets/forest.JPEG"); }
-.page-2_1{ background-image: url("Assets/forest.JPEG"); }
+.page-2_1{ background-image: url("Assets/ben-plane.JPEG"); }
 
 
 body {
     align-items: center;
     text-align: center;
-    padding: none;
+    padding: 30px;
     background-color: red;
 }
 
@@ -35,22 +34,17 @@ h1, h2{
 }
 
 .section{
-    display: flex;
+    display: block;
+    margin-right: 3%;
 }
 
-.button-container{
-    display:block;
-    width: 60%;
-    
-}
-
-.button1{
+.button{
     background-color: rgba(255, 255, 255, 0.726);
     display: block;
     border-radius: 8px;
     margin: 10px;
     padding: 5px;
-    /* width: 60%; */
+    flex: 1 1;
 }
 
 .next-button{
