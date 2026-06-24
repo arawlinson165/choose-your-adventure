@@ -27,7 +27,7 @@ html, body{
 /* had to learn inheritance for ts */
 .page-0{ background-image: url("Assets/forest.JPEG"); }
 .page-0_1{ background-image: url("Assets/bird.jpg"); }
-.page-loss{ background-image: url("Assets/ben-plane.JPEG"); }
+.page-wiz{ background-image: url("Assets/tyoshi.JPEG"); }
 
 
 body {
@@ -58,6 +58,7 @@ body {
 
 a{
     text-decoration: none;
+    color: black;
 }
 
 a:hover{
