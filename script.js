@@ -1,6 +1,9 @@
 //script for scenario 1
 let scoreDisp = document.querySelector("#points");
-let points = 0;
+let points = Number(localStorage.getItem("points"));
+if (points == null) points = 0;
+
+
 let pos = document.querySelector("#pos");
 let neg = document.querySelector("#neg");
 
@@ -12,24 +15,50 @@ let neg1 = document.querySelector("#neg1");
 
 //run off in different directions
 
-pos.addEventListener("click", function(event){
-    points += 1;
-    scoreDisp.innerHTML = points + " reputation score";
-    console.log(points);
-})
+if (pos !== null) {
+    pos.addEventListener("click", function (event) {
+        event.preventDefault();
+        points += 1;
+        localStorage.setItem("points", points);
+        scoreDisp.innerHTML = points + " reputation score";
+        console.log(points);
+        window.location.href = pos.href;
+    })
+}
 
-neg.addEventListener("click", function(event){
-    points -= 1;
-    scoreDisp.innerHTML = points + " reputation score";
-})
 
-pos1.addEventListener("click", function(event){
-    points += 1;
-    scoreDisp.innerHTML = points + " reputation score";
-    console.log(points);
-})
+if (neg !== null) {
+    neg.addEventListener("click", function (event) {
+        event.preventDefault();
+        points -= 1;
+        localStorage.setItem("points", points);
+        scoreDisp.innerHTML = points + " reputation score";
+        window.location.href = neg.href;
+    })
+}
 
-neg1.addEventListener("click", function(event){
-    points -= 1;
-    scoreDisp.innerHTML = points + " reputation score";
-})
+
+if (pos1 !== null) {
+    pos1.addEventListener("click", function (event) {
+        event.preventDefault();
+        points += 1;
+
+        localStorage.setItem("points", points);
+        scoreDisp.innerHTML = points + " reputation score";
+        console.log(points);
+        window.location.href = pos1.href;
+    })
+}
+
+
+if (neg1 !== null) {
+    neg1.addEventListener("click", function (event) {
+        event.preventDefault();
+        points -= 1;
+
+        localStorage.setItem("points", points);
+        scoreDisp.innerHTML = points + " reputation score";
+        window.location.href = neg1.href;
+    })
+}
+

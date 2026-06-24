@@ -27,7 +27,8 @@ html, body{
 /* had to learn inheritance for ts */
 .page-0{ background-image: url("Assets/forest.JPEG"); }
 .page-0_1{ background-image: url("Assets/bird.jpg"); }
-.page-wiz{ background-image: url("Assets/tyoshi.JPEG"); }
+.page-0_2{ background-image: url("Assets/stream.jpg"); }
+.page-wiz{ background-image: url("Assets/tyoshi.JPG"); }
 
 
 body {
