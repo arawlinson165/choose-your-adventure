@@ -20,8 +20,6 @@ if (pos !== null) {
         event.preventDefault();
         points += 1;
         localStorage.setItem("points", points);
-        scoreDisp.innerHTML = points + " reputation score";
-        console.log(points);
         window.location.href = pos.href;
     })
 }
@@ -32,7 +30,6 @@ if (neg !== null) {
         event.preventDefault();
         points -= 1;
         localStorage.setItem("points", points);
-        scoreDisp.innerHTML = points + " reputation score";
         window.location.href = neg.href;
     })
 }
@@ -42,10 +39,7 @@ if (pos1 !== null) {
     pos1.addEventListener("click", function (event) {
         event.preventDefault();
         points += 1;
-
         localStorage.setItem("points", points);
-        scoreDisp.innerHTML = points + " reputation score";
-        console.log(points);
         window.location.href = pos1.href;
     })
 }
@@ -57,8 +51,10 @@ if (neg1 !== null) {
         points -= 1;
 
         localStorage.setItem("points", points);
-        scoreDisp.innerHTML = points + " reputation score";
         window.location.href = neg1.href;
     })
 }
 
+document.addEventListener("DOMContentLoaded", function (event) {
+        scoreDisp.innerHTML = points + " reputation score";
+    })
