@@ -1,6 +1,7 @@
 html{
     overflow-x: none;
     overflow-y: hidden;
+    font-size: larger;
 }
 
 html, body{
